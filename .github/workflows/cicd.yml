@@ -32,8 +32,8 @@ jobs:
     - name: SonarQube Scan
       uses: sonarsource/sonarqube-scan-action@master
       env:
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+        SONAR_TOKEN: ${{ sonarcloud_github }}
+        SONAR_HOST_URL: ${{ https://sonarcloud.io}}
 
     - name: Install jq
       run: sudo apt-get update && sudo apt-get install -y jq

@@ -124,6 +124,10 @@
 		<id>maven-snapshots</id>
 		<url>http://43.240.66.4:8081/repository/maven-snapshots/</url>
 	</snapshotRepository>
+	<properties>
+  		<sonar.organization>shashipowar</sonar.organization>
+  		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+	</properties>
 	</distributionManagement>
 	
 </project>
